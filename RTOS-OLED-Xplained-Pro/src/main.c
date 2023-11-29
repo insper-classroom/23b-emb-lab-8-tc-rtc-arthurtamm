@@ -211,7 +211,7 @@ static void task_oled(void *pvParameters) {
                                                                                                   
   /* Leitura do valor atual do RTC */           
   uint32_t current_hour, current_min, current_sec;
-  uint32_t current_year, current_month, current_day, current_week;
+  // uint32_t current_year, current_month, current_day, current_week;
   rtc_get_time(RTC, &current_hour, &current_min, &current_sec);
 
   RTT_init(1000, 4000, RTT_MR_ALMIEN);
